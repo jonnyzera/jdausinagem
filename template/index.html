@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- SEO PROFISSIONAL - FOCO GUARULHOS -->
+    <title>JDA Ferramentas e Usinagem | Usinagem de Precisão em Guarulhos - SP</title>
+    <meta name="description" content="Especialistas em usinagem de precisão em Guarulhos. Serviços de fresa, torno e ferramentaria no Jardim Palmira. Atendimento industrial de alta qualidade com tecnologia CNC.">
+    <meta name="keywords" content="usinagem guarulhos, ferramentaria guarulhos, serviço de torno guarulhos, fresagem cnc guarulhos, usinagem de precisão sp, jardim palmira guarulhos, usinagem ferramentas sp">
+    <meta name="author" content="JDA Ferramentas e Usinagem">
+    <link rel="canonical" href="https://jdausinagem.com.br">
+
+    <!-- Open Graph (WhatsApp/Redes Sociais) -->
+    <meta property="og:title" content="JDA Ferramentas e Usinagem | Precisão em Guarulhos">
+    <meta property="og:description" content="Sua parceira industrial em Guarulhos. Especialistas em Fresa, Torno e peças técnicas sob medida.">
+    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:url" content="https://jdausinagem.com.br">
+    <meta property="og:type" content="website">
+
+    <!-- Dados Estruturados para o Google (LocalBusiness) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "JDA Ferramentas e Usinagem",
+      "image": "./img/logo.png",
+      "@id": "https://jdausinagem.com.br",
+      "url": "https://jdausinagem.com.br",
+      "telephone": "+55-11-96196-1835",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jardim Palmira",
+        "addressLocality": "Guarulhos",
+        "addressRegion": "SP",
+        "postalCode": "07000-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.4084,
+        "longitude": -46.5057
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "description": "Empresa especializada em ferramentaria e usinagem de alta precisão em Guarulhos, Jardim Palmira.",
+      "sameAs": [
+        "https://www.facebook.com/jdausinagem",
+        "https://www.instagram.com/jdausinagem"
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        :root {
+            --jda-navy: #0f172a;
+            --jda-blue-main: #1e40af; 
+            --jda-blue-light: #3b82f6;
+            --jda-cyan: #06b6d4;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1e293b;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            background-clip: text; /* Propriedade padrão para compatibilidade */
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-industrial {
+            background-image: radial-gradient(circle at 2px 2px, #e2e8f0 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+
+        .card-premium {
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @media (min-width: 1024px) {
+            .card-premium:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 25px 50px -12px rgba(30, 64, 175, 0.15);
+                border-color: var(--jda-blue-light);
+            }
+        }
+
+        .nav-blur {
+            backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .btn-jda {
+            background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-jda:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .logo-glow {
+            filter: drop-shadow(0 0 10px rgba(30, 64, 175, 0.4));
+            animation: pulse-glow 2.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { filter: drop-shadow(0 0 5px rgba(30, 64, 175, 0.3)); transform: scale(1); }
+            50% { filter: drop-shadow(0 0 20px rgba(30, 64, 175, 0.7)); transform: scale(1.05); }
+        }
+
+        .watermark {
+            position: absolute;
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 0;
+            transform: rotate(-15deg);
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #mobile-menu {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+        }
+        
+        .menu-hidden {
+            transform: translateX(100%);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .menu-visible {
+            transform: translateX(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        @media (max-width: 380px) {
+            .hero-title { font-size: 2.25rem !important; }
+            .brand-name { font-size: 1.25rem !important; }
+        }
+
+        .mobile-menu-active {
+            overflow: hidden;
+        }
+
+        /* Classe para mostrar info no click */
+        .info-active {
+            transform: translateY(0) !important;
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+<body class="bg-industrial relative w-full">
+
+    <!-- Header / Nav -->
+    <nav class="sticky top-0 z-[100] nav-blur border-b border-gray-100 w-full">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
+            <!-- Branding: Aumentado no Mobile -->
+            <div class="flex items-center gap-3 md:gap-4 shrink-0">
+                <div class="bg-white p-1 rounded-full shadow-md border border-gray-50 shrink-0">
+                    <img src="./img/logo.png" 
+                         alt="Logotipo JDA Usinagem Guarulhos" 
+                         class="h-11 w-11 md:h-14 md:w-14 object-contain"
+                         onerror="this.src='https://via.placeholder.com/64?text=JDA'">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <span class="block font-black text-xl md:text-3xl text-blue-900 tracking-tighter leading-none brand-name">JDA</span>
+                    <span class="block text-[10px] md:text-[14px] font-bold text-gray-400 uppercase tracking-widest mt-1 leading-none">Usinagem • Guarulhos - SP</span>
+                </div>
+            </div>
+
+            <!-- Navegação Desktop -->
+            <div class="hidden lg:flex items-center gap-8 font-bold text-sm text-gray-500 uppercase tracking-widest">
+                <a href="#inicio" class="text-blue-700 hover:text-blue-800 transition-colors">INÍCIO</a>
+                <a href="#servicos" class="hover:text-blue-700 transition-colors">SERVIÇOS</a>
+                <a href="#vitrine" class="hover:text-blue-700 transition-colors">VITRINE</a>
+                <a href="#sobre" class="hover:text-blue-700 transition-colors">QUEM SOMOS</a>
+                <a href="#contato" class="hover:text-blue-700 transition-colors uppercase">Localização</a>
+            </div>
+
+            <div class="flex items-center gap-1 md:gap-4">
+                <a href="tel:+5511961961835" class="hidden sm:flex items-center gap-2 text-blue-900 font-bold text-sm">
+                    <i data-lucide="phone-call" class="w-4 h-4 text-blue-600"></i>
+                    (11) 96196-1835
+                </a>
+                
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-blue-900 flex items-center justify-center rounded-full hover:bg-gray-100 transition-all active:scale-90" aria-label="Menu">
+                    <i data-lucide="menu" id="menu-icon" class="w-7 h-7"></i>
+                </button>
+
+                <button class="hidden md:block btn-jda text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-blue-100 uppercase tracking-wider transition-all">
+                    Orçamento
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Overlay Fluido -->
+        <div id="mobile-menu" class="menu-hidden fixed inset-0 lg:hidden bg-white z-[110] px-6 py-8 shadow-2xl flex flex-col h-screen">
+            <div class="flex items-center justify-between mb-10">
+                <div class="flex items-center gap-3">
+                    <img src="./img/logo.png" class="h-10 w-10 object-contain" alt="Logo JDA">
+                    <span class="font-black text-blue-900 text-xl uppercase tracking-tighter italic">JDA Usinagem</span>
+                </div>
+                <button onclick="toggleMobileMenu()" class="p-2 bg-gray-50 rounded-full text-gray-400">
+                    <i data-lucide="x" class="w-7 h-7"></i>
+                </button>
+            </div>
+
+            <nav class="flex flex-col space-y-4">
+                <a href="#inicio" onclick="toggleMobileMenu()" class="flex items-center justify-between font-bold text-lg text-slate-800 uppercase tracking-widest p-4 bg-slate-50 rounded-2xl">
+                    <span>INÍCIO</span> <i data-lucide="chevron-right" class="text-blue-600 w-5 h-5"></i>
+                </a>
+                <a href="#servicos" onclick="toggleMobileMenu()" class="flex items-center justify-between font-bold text-lg text-slate-800 uppercase tracking-widest p-4 bg-slate-50 rounded-2xl">
+                    <span>SERVIÇOS</span> <i data-lucide="chevron-right" class="text-blue-600 w-5 h-5"></i>
+                </a>
+                <a href="#vitrine" onclick="toggleMobileMenu()" class="flex items-center justify-between font-bold text-lg text-slate-800 uppercase tracking-widest p-4 bg-slate-50 rounded-2xl">
+                    <span>VITRINE</span> <i data-lucide="chevron-right" class="text-blue-600 w-5 h-5"></i>
+                </a>
+                <a href="#sobre" onclick="toggleMobileMenu()" class="flex items-center justify-between font-bold text-lg text-slate-800 uppercase tracking-widest p-4 bg-slate-50 rounded-2xl">
+                    <span>QUEM SOMOS</span> <i data-lucide="chevron-right" class="text-blue-600 w-5 h-5"></i>
+                </a>
+            </nav>
+            
+            <div class="mt-auto space-y-4 pb-10">
+                <a href="https://wa.me/5511961961835?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20serviços%20de%20usinagem%20na%20JDA." 
+                   class="btn-jda text-white flex items-center justify-center gap-3 py-4 rounded-2xl font-black text-lg shadow-xl w-full">
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                    Pedir Orçamento
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-8 md:pt-16 lg:pt-24 pb-12 md:pb-32 px-4 md:px-6 overflow-hidden w-full">
+        <img src="./img/logo.png" class="watermark w-[250px] md:w-[500px] -left-10 top-0" alt="">
+        
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-16 items-center relative">
+            <div class="z-10 text-center lg:text-left">
+                <div class="inline-flex items-center gap-3 bg-white border border-blue-100 px-4 py-2 rounded-full mb-6 md:mb-8 shadow-sm">
+                    <span class="relative flex h-2.5 w-2.5">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-600"></span>
+                    </span>
+                    <span class="text-[10px] md:text-xs font-bold text-blue-900 uppercase tracking-widest">Usinagem de Precisão em Guarulhos</span>
+                </div>
+                <h1 class="text-4xl md:text-7xl lg:text-8xl font-black text-slate-900 leading-[0.95] mb-6 md:mb-8 hero-title">
+                    Precisão <br> <span class="text-gradient">Absoluta.</span>
+                </h1>
+                <p class="text-sm md:text-xl text-slate-500 max-w-xl mb-8 md:mb-10 leading-relaxed mx-auto lg:mx-0 font-medium">
+                    Na JDA, cada micron conta. Referência em usinagem industrial em **Guarulhos**, unimos a tradição com a inovação tecnológica para resultados impecáveis.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                    <a href="#servicos" class="btn-jda text-white px-8 md:px-10 py-3.5 md:py-5 rounded-2xl font-extrabold text-sm md:text-lg flex items-center gap-3 shadow-xl w-full sm:w-auto text-center justify-center text-shadow-sm">
+                        Explorar Soluções
+                        <i data-lucide="chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative lg:h-[600px] flex items-center justify-center w-full">
+                <div class="absolute inset-0 bg-blue-600/5 rounded-full blur-3xl"></div>
+                <div class="relative z-10 animate-float w-full max-w-[450px]">
+                    <div class="bg-white p-2 md:p-4 rounded-[2rem] md:rounded-[3rem] shadow-2xl border border-blue-50 overflow-hidden aspect-square sm:aspect-auto">
+                        <img src="./img/torno.jpeg" 
+                             alt="Torno mecânico em operação na JDA Usinagem em Guarulhos" 
+                             class="rounded-[1.5rem] md:rounded-[2.5rem] w-full h-full md:h-[500px] object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                </div>
+                
+                <div class="absolute hidden lg:block top-0 -right-20 bg-white p-10 rounded-[3rem] shadow-2xl border border-gray-50 max-w-[320px] z-20 transition-all hover:scale-105">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="p-3.5 bg-green-100 text-green-600 rounded-2xl shrink-0">
+                            <i data-lucide="award" class="w-10 h-10"></i>
+                        </div>
+                        <span class="text-2xl font-black text-blue-950 leading-none">Qualidade</span>
+                    </div>
+                    <p class="text-base text-gray-500 font-semibold leading-relaxed text-shadow-sm">
+                        Excelência Garantida em cada peça produzida pela JDA em Guarulhos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-12 md:py-24 px-4 md:px-6 bg-white border-y border-gray-50 w-full">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-4 tracking-tight italic">Nossas Especialidades</h2>
+                <p class="text-sm md:text-lg text-gray-500 font-medium italic uppercase tracking-widest">Guarulhos • SP</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+                <article class="card-premium group overflow-hidden rounded-[2rem] w-full">
+                    <div class="relative h-52 md:h-80 overflow-hidden">
+                        <img src="./img/fresadora.jpeg" 
+                             alt="Serviço de Fresa e Fresamento CNC em Guarulhos" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                             onerror="this.src='https://images.unsplash.com/photo-1610411604905-2e6b05266851?auto=format&fit=crop&q=80&w=800'">
+                        <div class="absolute bottom-4 left-4 bg-blue-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">
+                            FRESAMENTO
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-lg md:text-2xl font-black text-slate-900 uppercase tracking-tighter">Fresa de Precisão</h3>
+                            <i data-lucide="settings" class="text-blue-600 w-5 h-5 md:w-6 md:h-6"></i>
+                        </div>
+                        <p class="text-gray-500 text-xs md:text-sm leading-relaxed mb-6 font-medium">
+                            Usinagem de superfícies complexas em Guarulhos com precisão técnica absoluta em diversos materiais industriais.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-50">
+                            <span class="text-[9px] md:text-xs font-bold text-gray-400">Microns de Precisão</span>
+                            <a href="#contato" class="text-blue-600 font-bold text-xs md:text-sm flex items-center gap-2">Solicitar Orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-premium group overflow-hidden rounded-[2rem] w-full">
+                    <div class="relative h-52 md:h-80 overflow-hidden">
+                        <img src="./img/torno.jpeg" 
+                             alt="Serviço de Torno Mecânico e CNC em Guarulhos" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                             onerror="this.src='https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800'">
+                        <div class="absolute bottom-4 left-4 bg-cyan-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">
+                            TORNEAMENTO
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-lg md:text-2xl font-black text-slate-900 uppercase tracking-tighter">Torno Mecânico</h3>
+                            <i data-lucide="drill" class="text-cyan-600 w-5 h-5 md:w-6 md:h-6"></i>
+                        </div>
+                        <p class="text-gray-500 text-xs md:text-sm leading-relaxed mb-6 font-medium">
+                            Produção de eixos e componentes cilíndricos com acabamento superior e tolerâncias rigorosas na unidade de Guarulhos.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-50">
+                            <span class="text-[9px] md:text-xs font-bold text-gray-400">Acabamento Retificado</span>
+                            <a href="#contato" class="text-blue-600 font-bold text-xs md:text-sm flex items-center gap-2">Solicitar Orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vitrine com Informações ao Clicar (Mobile & Desktop) -->
+    <section id="vitrine" class="py-12 md:py-24 px-4 md:px-6 bg-slate-50 w-full">
+        <div class="max-w-7xl mx-auto text-center mb-10 md:mb-16">
+            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-4 tracking-tight uppercase italic">Nossa Vitrine</h2>
+            <p class="text-sm md:text-lg text-gray-500 font-medium italic">Toque na imagem para ver detalhes da unidade **Guarulhos**.</p>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-8">
+            <!-- Produto 1 -->
+            <div class="group relative aspect-square rounded-xl md:rounded-[2rem] overflow-hidden card-premium border-0 shadow-md cursor-pointer" onclick="toggleInfo(this)">
+                <img src="./img/produto_1.jpeg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Rasgo de Precisão JDA">
+                <div class="info-panel absolute bottom-0 left-0 right-0 bg-blue-900/95 py-3 px-4 transform translate-y-full opacity-0 transition-all duration-300 z-10">
+                    <p class="text-white font-black text-xs md:text-sm uppercase tracking-widest">Rasgo de Precisão</p>
+                </div>
+            </div>
+            <!-- Produto 2 -->
+            <div class="group relative aspect-square rounded-xl md:rounded-[2rem] overflow-hidden card-premium border-0 shadow-md cursor-pointer" onclick="toggleInfo(this)">
+                <img src="./img/produto_04.jpeg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Corte CNC JDA">
+                <div class="info-panel absolute bottom-0 left-0 right-0 bg-blue-900/95 py-3 px-4 transform translate-y-full opacity-0 transition-all duration-300 z-10">
+                    <p class="text-white font-black text-xs md:text-sm uppercase tracking-widest">Corte CNC Industrial</p>
+                </div>
+            </div>
+            <!-- Produto 3 -->
+            <div class="group relative aspect-square rounded-xl md:rounded-[2rem] overflow-hidden card-premium border-0 shadow-md cursor-pointer" onclick="toggleInfo(this)">
+                <img src="./img/produto_05.jpeg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Acabamento Técnico JDA">
+                <div class="info-panel absolute bottom-0 left-0 right-0 bg-blue-900/95 py-3 px-4 transform translate-y-full opacity-0 transition-all duration-300 z-10">
+                    <p class="text-white font-black text-xs md:text-sm uppercase tracking-widest">Acabamento Técnico</p>
+                </div>
+            </div>
+            <!-- Produto 4 -->
+            <div class="group relative aspect-square rounded-xl md:rounded-[2rem] overflow-hidden card-premium border-0 shadow-md cursor-pointer" onclick="toggleInfo(this)">
+                <img src="./img/produto_06.jpeg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Peça Especial JDA">
+                <div class="info-panel absolute bottom-0 left-0 right-0 bg-blue-900/95 py-3 px-4 transform translate-y-full opacity-0 transition-all duration-300 z-10">
+                    <p class="text-white font-black text-xs md:text-sm uppercase tracking-widest">Usinagem de Peça Especial</p>
+                </div>
+            </div>
+            <!-- Produto 5 -->
+            <div class="group relative aspect-square rounded-xl md:rounded-[2rem] overflow-hidden card-premium border-0 shadow-md cursor-pointer" onclick="toggleInfo(this)">
+                <img src="./img/produto_07.jpeg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="JDA Ferramentas e Usinagem">
+                <div class="info-panel absolute bottom-0 left-0 right-0 bg-blue-900/95 py-3 px-4 transform translate-y-full opacity-0 transition-all duration-300 z-10">
+                    <p class="text-white font-black text-xs md:text-sm uppercase tracking-widest">Molde de Injeção</p>
+                </div>
+            </div>
+            <!-- Produto 6 -->
+            <div class="group relative aspect-square rounded-xl md:rounded-[2rem] overflow-hidden card-premium border-0 shadow-md cursor-pointer" onclick="toggleInfo(this)">
+                <img src="./img/produto_08.jpeg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Usinagem Jardim Palmira">
+                <div class="info-panel absolute bottom-0 left-0 right-0 bg-blue-900/95 py-3 px-4 transform translate-y-full opacity-0 transition-all duration-300 z-10">
+                    <p class="text-white font-black text-xs md:text-sm uppercase tracking-widest">Furo Calibrado</p>
+                </div>
+            </div>
+            <!-- Produto 7 -->
+            <div class="group relative aspect-square rounded-xl md:rounded-[2rem] overflow-hidden card-premium border-0 shadow-md cursor-pointer" onclick="toggleInfo(this)">
+                <img src="./img/produto_09.jpeg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Peças industriais Guarulhos">
+                <div class="info-panel absolute bottom-0 left-0 right-0 bg-blue-900/95 py-3 px-4 transform translate-y-full opacity-0 transition-all duration-300 z-10">
+                    <p class="text-white font-black text-xs md:text-sm uppercase tracking-widest">Rosca e Torneamento</p>
+                </div>
+            </div>
+            <!-- Produto 8 -->
+            <div class="group relative aspect-square rounded-xl md:rounded-[2rem] overflow-hidden card-premium border-0 shadow-md cursor-pointer" onclick="toggleInfo(this)">
+                <img src="./img/produto_10.jpeg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Fabricação JDA">
+                <div class="info-panel absolute bottom-0 left-0 right-0 bg-blue-900/95 py-3 px-4 transform translate-y-full opacity-0 transition-all duration-300 z-10">
+                    <p class="text-white font-black text-xs md:text-sm uppercase tracking-widest">Engrenagem Customizada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção: Quem Somos -->
+    <section id="sobre" class="py-16 md:py-32 px-4 md:px-6 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-24 relative z-10">
+            
+            <div class="flex-1 text-center lg:text-left space-y-10">
+                <div class="flex justify-center lg:justify-start">
+                    <div class="bg-blue-50 p-6 rounded-full shadow-inner logo-glow inline-block border border-blue-100">
+                        <img src="./img/logo.png" alt="Branding JDA Usinagem" class="h-20 w-20 md:h-28 md:w-28 object-contain">
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-5xl font-black text-blue-950 tracking-tighter uppercase italic leading-none">Quem Somos</h2>
+                    <h3 class="text-blue-600 font-extrabold text-xl md:text-2xl uppercase tracking-widest italic">Pequena empresa ajudando empresários.</h3>
+                    <p class="text-slate-600 text-base md:text-xl leading-relaxed max-w-2xl font-medium mx-auto lg:mx-0">
+                        A JDA Usinagem nasceu para ser o suporte técnico que outros empreendedores de **Guarulhos** e região precisam. Somos focados em resultados reais, ajudando parceiros a transformar ideias complexas em peças de alta precisão.
+                    </p>
+                    <p class="text-slate-500 text-sm md:text-lg leading-relaxed max-w-2xl border-l-4 border-blue-600 pl-6 italic mx-auto lg:mx-0 text-left">
+                        Trabalhamos com materiais diversos, incluindo Aço Inoxidável, Alumínio, Ligas de Cobre, Nylon, Polímeros Industriais e Metais Ferrosos.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-6 pt-4">
+                    <div class="flex flex-col items-center lg:items-start space-y-3">
+                        <div class="text-blue-600">
+                            <i data-lucide="target" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="font-black text-blue-900 text-sm uppercase tracking-widest">Método</h4>
+                        <p class="text-slate-500 text-sm font-medium leading-snug">Processos simplificados e entregas no prazo.</p>
+                    </div>
+                    <div class="flex flex-col items-center lg:items-start space-y-3">
+                        <div class="text-blue-600">
+                            <i data-lucide="award" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="font-black text-blue-900 text-sm uppercase tracking-widest">Qualidade</h4>
+                        <p class="text-slate-500 text-sm font-medium leading-snug">Rigor técnico absoluto e medição em microns.</p>
+                    </div>
+                    <div class="flex flex-col items-center lg:items-start space-y-3">
+                        <div class="text-blue-600">
+                            <i data-lucide="shield-check" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="font-black text-blue-900 text-sm uppercase tracking-widest">Princípios</h4>
+                        <p class="text-slate-500 text-sm font-medium leading-snug">Parceria real e transparência genuína.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagem Única -->
+            <div class="flex-1 w-full max-w-lg lg:max-w-xl">
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-blue-600/5 rounded-[3rem] blur-2xl group-hover:bg-blue-600/10 transition-all"></div>
+                    <div class="relative bg-white p-3 rounded-[3rem] shadow-2xl border border-blue-50 overflow-hidden aspect-[4/5] sm:aspect-auto text-shadow-sm">
+                        <img src="./img/fresadora.jpeg" 
+                             alt="Instalações JDA Usinagem no Jardim Palmira, Guarulhos" 
+                             class="rounded-[2.5rem] w-full h-full md:h-[600px] object-cover hover:scale-105 transition-transform duration-1000"
+                             onerror="this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / Mapa -->
+    <section id="contato" class="py-12 md:py-24 px-4 md:px-6 relative overflow-hidden bg-slate-50 w-full">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="bg-blue-900 rounded-[2rem] md:rounded-[4rem] p-6 md:p-12 lg:p-20 text-white relative shadow-2xl overflow-hidden flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+                <img src="./img/logo.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full opacity-5 pointer-events-none scale-150" alt="Marca d'água JDA">
+                
+                <div class="flex-1 space-y-8 md:space-y-10 z-10 text-center lg:text-left w-full">
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tighter italic uppercase">
+                        Usinagem Industrial <br> em <span class="text-blue-400 underline decoration-blue-500/30 underline-offset-8">Guarulhos.</span>
+                    </h2>
+                    <p class="text-blue-100/80 text-sm md:text-lg font-medium max-w-lg mx-auto lg:mx-0 leading-relaxed italic text-shadow-sm">
+                        Fale agora com a nossa engenharia em **Guarulhos**. Entregamos orçamentos detalhados com análise de viabilidade para todo SP.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="https://wa.me/5511961961835?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20serviços%20de%20usinagem%20na%20JDA%20em%20Guarulhos." target="_blank" class="bg-white text-blue-900 px-6 md:px-10 py-4 md:py-5 rounded-2xl font-black text-base md:text-lg flex items-center justify-center gap-3 hover:scale-105 transition-transform shadow-2xl uppercase w-full sm:w-auto text-shadow-sm">
+                            <i data-lucide="send" class="w-5 h-5 md:w-6 md:h-6"></i>
+                            Orçamento WhatsApp
+                        </a>
+                        <div class="flex items-center gap-3 px-6 py-4 bg-blue-600/20 rounded-2xl border border-white/10 backdrop-blur-sm justify-center w-full sm:w-auto">
+                            <i data-lucide="zap" class="text-yellow-400 w-5 h-5 md:w-6 md:h-6 animate-pulse"></i>
+                            <span class="text-white font-bold text-xs md:text-sm uppercase tracking-widest italic">Resposta em 2h</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 md:pt-12 border-t border-white/10 flex flex-col md:flex-row gap-8 md:gap-10">
+                        <div class="flex items-start gap-4 justify-center lg:justify-start">
+                            <div class="p-3 bg-white/10 rounded-xl shrink-0"><i data-lucide="map-pin" class="w-5 h-5 text-blue-300"></i></div>
+                            <div class="text-left">
+                                <h4 class="font-bold text-base md:text-lg leading-none mb-1 uppercase tracking-tighter">Unidade Guarulhos</h4>
+                                <p class="text-blue-200 text-xs md:text-sm font-medium italic">Jardim Palmira, Guarulhos - SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 w-full z-10 h-[300px] md:h-[400px] lg:h-[550px]">
+                    <div class="relative w-full h-full rounded-[1.5rem] md:rounded-[3rem] overflow-hidden border-2 md:border-4 border-white/10 shadow-2xl">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14637.766398934988!2d-46.50570776843444!3d-23.40842880789069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8aa7a829f0ef%3A0xe54d32a49f87265a!2zSmFyZGltIFBhbG1pcmEsIEd1YXJ1bGhvcyAtIFNQ!5e0!3m2!1spt-BR!2sbr!4v1705600000000!5m2!1spt-BR!2sbr" 
+                            class="absolute inset-0 w-full h-full grayscale invert-[0.1] contrast-[1.1]" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Localização JDA Usinagem Guarulhos">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 pt-16 md:pt-24 pb-8 md:pb-12 px-4 md:px-6 border-t border-white/5 w-full text-center lg:text-left">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-12 lg:gap-16 mb-16 md:mb-20">
+            <div class="max-w-md space-y-6 md:space-y-8">
+                <div class="flex items-center justify-center lg:justify-start gap-4">
+                    <div class="bg-white p-2 rounded-2xl shadow-xl shrink-0">
+                        <img src="./img/logo.png" alt="JDA Logo Usinagem" class="h-10 w-10 md:h-12 md:w-12 object-contain" onerror="this.src='https://via.placeholder.com/48?text=JDA'">
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <span class="font-black text-2xl md:text-3xl text-white italic tracking-tighter leading-none">JDA</span>
+                        <span class="text-[8px] md:text-[10px] font-extrabold text-blue-500 uppercase tracking-[0.2em] mt-1 italic leading-none">Usinagem de Alta Performance • Guarulhos</span>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-xs md:text-sm leading-relaxed font-medium italic mx-auto lg:mx-0">
+                    Especialistas em ferramentaria e usinagem sediados no **Jardim Palmira, Guarulhos**. Atendimento industrial em todo o estado de São Paulo.
+                </p>
+                <div class="flex gap-4 justify-center lg:justify-start">
+                    <a href="#" class="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center text-slate-500 hover:text-white border border-white/10 hover:bg-blue-600 transition-all"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    <a href="#" class="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center text-slate-500 hover:text-white border border-white/10 hover:bg-blue-600 transition-all"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="#" class="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center text-slate-500 hover:text-white border border-white/10 hover:bg-blue-600 transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-8 md:gap-12 lg:gap-20 text-left">
+                <div>
+                    <h4 class="font-black text-blue-500 text-[10px] uppercase tracking-[0.3em] mb-6 italic">Explorar</h4>
+                    <ul class="space-y-3 text-slate-400 text-xs md:text-sm font-bold uppercase tracking-tight">
+                        <li><a href="#inicio" class="hover:text-blue-400 transition-colors">Início</a></li>
+                        <li><a href="#vitrine" class="hover:text-blue-400 transition-colors">Vitrine</a></li>
+                        <li><a href="#sobre" class="hover:text-blue-400 transition-colors">Quem Somos</a></li>
+                        <li><a href="#servicos" class="hover:text-blue-400 transition-colors">Serviços</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-black text-blue-500 text-[10px] uppercase tracking-[0.3em] mb-6 italic">Setores</h4>
+                    <ul class="space-y-3 text-slate-400 text-xs md:text-sm font-bold uppercase tracking-tight">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors font-medium">Centro CNC</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors font-medium">Torno Palmira</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors font-medium">Fresa SP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-center">
+            <p class="text-[9px] md:text-[10px] text-slate-500 font-black uppercase tracking-widest italic">&copy; 2024 JDA Ferramentas & Usinagem • Jardim Palmira, Guarulhos - SP.</p>
+            <div class="flex items-center gap-6">
+                <img src="./img/logo.png" alt="Logo JDA" class="h-5 opacity-20 grayscale brightness-200" onerror="this.src='https://via.placeholder.com/24?text=JDA'">
+                <p class="text-[9px] text-slate-700 font-bold uppercase tracking-widest italic leading-none">Autoridade em Usinagem</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializar Ícones
+        lucide.createIcons();
+
+        // Lógica do Menu Mobile Fluida
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const body = document.body;
+            const icon = document.getElementById('menu-icon');
+
+            if (menu.classList.contains('menu-hidden')) {
+                menu.classList.remove('menu-hidden');
+                menu.classList.add('menu-visible');
+                body.classList.add('mobile-menu-active');
+            } else {
+                menu.classList.add('menu-hidden');
+                menu.classList.remove('menu-visible');
+                body.classList.remove('mobile-menu-active');
+            }
+        }
+
+        // Função para alternar info na vitrine no clique
+        function toggleInfo(element) {
+            const panel = element.querySelector('.info-panel');
+            const isActive = panel.classList.contains('info-active');
+            
+            // Fecha todos os outros painéis primeiro
+            document.querySelectorAll('.info-panel').forEach(p => p.classList.remove('info-active'));
+            
+            // Se não estava ativo, abre este
+            if (!isActive) {
+                panel.classList.add('info-active');
+            }
+        }
+    </script>
+</body>
+</html>
